@@ -28,13 +28,13 @@ export default defineConfig({
   
   // reporter: 'html',
 
-  // reporter: [
-  //   ['html', { open: 'never' }]
-  // ],
   reporter: [
-    ['html'],
-    ['allure-playwright']
+    ['html', { open: 'never' }]
   ],
+  // reporter: [
+  //   ['html'],
+  //   ['allure-playwright']
+  // ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   timeout: 30 * 1000,
   use: {
